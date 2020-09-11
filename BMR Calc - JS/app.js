@@ -29,12 +29,12 @@ function result(){
     
     if (gender === 'male') {
         let BMR = 66 + (6.24 * weight) + (12.7 * height) - (6.755 * age)
-        outputBMR.value = BMR;
+        outputBMR.value = BMR.toFixed(2);;
         calculateTDEE(activity, BMR)
 
     } else if (gender === 'female') {
         let BMR = 655.1 + (4.35 * weight) + (4.7 * height) - (4.7 * age)
-        outputBMR.value = BMR;
+        outputBMR.value = BMR.toFixed(2);;
         calculateTDEE(activity, BMR)
     }
     
